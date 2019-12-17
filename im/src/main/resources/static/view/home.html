@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+	<title>iM</title>
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/home.css" rel="stylesheet" />
+</head>
+<body class="bg">
+<div class="basic">
+	<!-- 左侧操作区域 -->
+	<div class="left-area" >
+		<div class="photo-area">
+			<div class="photo"></div>
+		</div>
+		<!-- 此处为功能列表区域 -->
+		<div id="chat" class="left-icon-area center">
+			<i class="fa fa-comments-o"></i>
+		</div>
+		<div id="friends" class="left-icon-area center" >
+			<i class="fa fa-user-circle"></i>
+		</div>
+		<!-- end   -->
+	</div>
+	<!-- 中心 聊天-->
+	<div id="chatArea" class="center-area-chat">
+		<!-- <div class="center-operation-area">
+            <div class="center-operation-area-top">
+                <div class="center-operation-area-font">中国中央电视台新闻联播</div>
+                <i class="fa fa-ellipsis-h center-operation-area-operation"></i>
+            </div>
+            <div class="center-operation-area-chat">
+
+            </div>
+            <div class="center-operation-area-input-div">
+                <textarea id="chatInput" class="center-operation-area-input" autofocus="autofocus"></textarea>
+                <div id="send" class="center-operation-area-send-btn" onmouseover="sendOnmouseover(this)" onmouseout="sendOnmouseout(this)" onclick="sendClick(chatInput)">发送</div>
+            </div>
+        </div> -->
+	</div>
+	<!-- 中心 好友-->
+	<div id="friendArea" class="center-area-friend">
+		<!-- <div class="center-area-friend-inn">
+            <div class="center-area-friend-inn-name">A，拉布拉多小屋，15842723161</div>
+            <div class="center-area-friend-inn-sex"></div>
+            <div class="center-area-friend-inn-photo"></div>
+            <div class="center-area-friend-inn-signature">爱一个人就是希望她幸福，不管哪一天你爱她的方式都是让他幸福爱一个人就是希望她幸福，不管哪一天你爱她的方式都是让他幸福爱一个人就是希望她幸福，不管哪一天你爱她的方式都是让他幸福爱一个人就是希望她幸福，不管哪一天你爱她的方式都是让他幸福爱一个人就是希望她幸福，不管哪一天你爱她的方式都是让他幸福爱一个人就是希望她幸福，不管哪一天你爱她的方式都是让他幸福</div>
+            <div class="center-area-friend-inn-area">
+                <div class="center-area-friend-inn-area-remake">
+                    <div class="center-area-friend-inn-area-remake-font">备注</div>
+                    <input id="remakeInput" class="center-area-friend-inn-area-remake-input" placeholder="点击添加备注" onclick="changeRemake(this)"/>
+                </div>
+                <div class="center-area-friend-inn-area-region">
+                    <div class="center-area-friend-inn-area-region-font">地区</div>
+                    <div class="center-area-friend-inn-area-region-val">辽宁 盘锦</div>
+                </div>
+                <div class="center-area-friend-inn-area-imid">
+                    <div class="center-area-friend-inn-area-imid-font">im号</div>
+                    <div class="center-area-friend-inn-area-imid-val">im269832533</div>
+                </div>
+            </div>
+            <div id="jumpSendBtn" class="center-area-friend-inn-area-send">发送信息</div>
+        </div> -->
+	</div>
+	<!-- 右区域 -->
+	<div class="right-area">
+		<div class="right-area-inn-top">
+			<div class="right-area-inn-top-inn">
+				<i class="fa fa-search right-area-inn-top-search"></i>
+				<input class="right-area-inn-top-search-input" placeholder="搜索"/>
+				<i class="fa fa-times-circle-o right-area-inn-top-search-clean"></i>
+			</div>
+		</div>
+		<!-- 聊天列表 -->
+		<div id="chatList" class="right-area-list">
+			<!-- <div class='right-area-list-inn'>
+                <div class="head-photo"></div>
+                <div class="chat-info-name">新闻联播一二三四美食订餐群为什么还没有到超长字符哎呀好玩</div>
+                <div class="chat-info-info">新闻联播一二三四美食订餐群为什么还没有到超长字符哎呀好玩</div>
+                <div class="chat-info-time">23:55</div>
+            </div> -->
+		</div>
+		<!-- 好友列表 -->
+		<div id="friensList" class="right-area-friends">
+			<!-- <div id=${"friend"+a+i} class="right-area-friends-inn-inn">
+                            <div id=${"friendPhoto"+a+i} class="right-area-friends-inn-inn-photo"></div>
+                            <div id=${"friendName"+a+i} class="right-area-friends-inn-inn-name">${chatName}</div>
+                        </div>-->
+		</div>
+	</div>
+	<!-- 右下区域 先不用这种交互-->
+	<!-- <div class="right-area-bottom">
+        <i class="right-area-bottom-hint">点击此处继续加载~ ~</i>
+    </div> -->
+	<div  class="left-set-area center">
+		<i class="fa fa-navicon left-set-icon-area"></i>
+	</div>
+	<div id="mask" class="mask">
+		<div id="addLoginName" class="add_login_name">
+			<div class="add_login_name_font">请设置您的昵称~ ~</div>
+			<input type="text" class="add_login_name_input">
+			<div class="add_login_name_font_hint">--昵称一旦设置无法修改--</div>
+			<div id="addLoginNameBtn" class="add_login_name_btn">设置昵称</div>
+		</div>
+	</div>
+
+</div>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="js/home.js"></script>
+<script src="js/Utils.js"></script>
+<script src="js/loading.js"></script>
+</body>
+</html>

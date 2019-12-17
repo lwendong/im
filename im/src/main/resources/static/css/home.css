@@ -1,0 +1,604 @@
+body{
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.bg{
+	background: #6F729B;
+}
+.basic{
+	width: calc(100vw - 108px);
+	height: calc(100vh - 48px);
+	margin: 2.5%;
+	margin-bottom: 0;
+	background: #FBFFFF;
+}
+.left-area{
+	width: 5%;
+	height: 97%;
+	background: #1F3437;
+	display: inline-block;
+
+	float: left;
+}
+.photo-area{
+	width: 100%;
+	height: 120px;
+}
+.photo{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	border: 1px #ECECF8 solid;
+	position: relative;
+	top: 30px;
+	left: 17px;
+}
+.left-icon-area{
+	width: 100%;
+	height: 82px;
+	display: flex;
+	display: -webkit-box;
+	color: #B6BCD6;
+	cursor: pointer;
+}
+i{
+	font-size: 40px !important;
+}
+.center-area-chat{
+	width: 74%;
+	height: 100%;
+	background: #F5F5F5;
+	display: none;
+	float: left;
+}
+.center-area-friend{
+	width: 74%;
+	height: 100%;
+	background: #F5F5F5;
+	display: inline-block;
+	float: left;
+	text-align: center;
+}
+.center-area-friend-inn{
+	width: 60%;
+	height: 69%;
+	display: inline-block;
+	margin-top: 8%;
+}
+.center-area-friend-inn-name{
+	width: auto;
+	max-width: 80%;
+	height: 14%;
+	float: left;
+	font-size: 30px;
+	font-weight: 400;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	letter-spacing: 2px;
+	text-align: -webkit-left;
+}
+.center-area-friend-inn-sex{
+	width: 5%;
+	height: 5%;
+	display: inline-block;
+	float: left;
+}
+.center-area-friend-inn-photo{
+	width: 14%;
+	height: 14%;
+	display: inline-block;
+	float: right;
+	border-radius: 3px;
+	border: 1px #808080 solid;
+}
+.center-area-friend-inn-signature{
+	width: 84%;
+	height: 8%;
+	float: left;
+	font-size: 17px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	letter-spacing: 2px;
+	text-align: -webkit-left;
+	opacity: 0.5;
+}
+.center-area-friend-inn-area{
+	width: 100%;
+	height: auto;
+	min-height: 20%;
+	display: inline-block;
+	margin-top: 1%;
+	border-bottom: 1px #E7E7E7 solid;
+	border-top: 1px #E7E7E7 solid;
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+.center-area-friend-inn-area-remake{
+	width: 100%;
+	height: 40px;
+}
+.center-area-friend-inn-area-region{
+	width: 100%;
+	height: 40px;
+	margin-top: 3%;
+}
+.center-area-friend-inn-area-imid{
+	width: 100%;
+	height: 40px;
+	margin-top: 3%;
+}
+.center-area-friend-inn-area-remake-font{
+	display: inline-block;
+	float: left;
+	font-size: 18px;
+	margin-top: 1%;
+	letter-spacing: 22px;
+	opacity: 0.5;
+	cursor: default;
+}
+.center-area-friend-inn-area-region-font{
+	display: inline-block;
+	float: left;
+	font-size: 18px;
+	margin-top: 1%;
+	letter-spacing: 22px;
+	opacity: 0.5;
+	cursor: default;
+}
+.center-area-friend-inn-area-imid-font{
+	display: inline-block;
+	float: left;
+	font-size: 18px;
+	margin-top: 1%;
+	letter-spacing: 11px;
+	opacity: 0.5;
+	cursor: default;
+}
+.center-area-friend-inn-area-remake-input{
+	display: inline-block;
+	float: left;
+	height: 100%;
+	margin-left: 4%;
+	border: none;
+	font-size: 17px;
+	outline: none;
+	background: none;
+	cursor: pointer;
+}
+.center-area-friend-inn-area-region-val{
+	display: inline-block;
+	float: left;
+	font-size: 18px;
+	margin-top: 1%;
+	margin-left: 4%;
+	text-align: -webkit-left;
+}
+.center-area-friend-inn-area-imid-val{
+	display: inline-block;
+	float: left;
+	font-size: 18px;
+	margin-top: 1%;
+	margin-left: 5%;
+	text-align: -webkit-left;
+}
+.center-area-friend-inn-area-send{
+	background: #1AAD19;
+	width: 17%;
+	height: 5%;
+	font-size: 16px;
+	display: inherit;
+	text-align: center;
+	line-height: 32px;
+	margin-top: 3%;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.right-area{
+	height: 100%;
+	width: 21%;
+	background: #EEEAE8;
+	display: inline-block;
+	float: right;
+}
+.right-area-bottom{
+	background: #EEEAE8;
+	width: 21%;
+	height: 3%;
+	display: inline-block;
+	float: right;
+	text-align: center;
+}
+.right-area-bottom-hint{
+	font-size: 10px !important;
+}
+.left-set-area{
+	width: 4.749%;
+	height: 3%;
+	background: #1F3437;
+	position: absolute;
+	bottom: 0px;
+	left: 2.5%;
+}
+.left-set-icon-area{
+	font-size: 27px !important;
+	color: #B6BCD6;
+}
+.right-area-inn-top{
+	width: 100%;
+	height: 10%;
+
+}
+.right-area-inn-top-inn{
+	width: 83%;
+	height: 49%;
+	position: relative;
+	top: 30%;
+	left: 8%;
+	border: 1px #DBD9D8 solid;
+	border-radius: 10px;
+	background: #DBD9D8;
+}
+.right-area-inn-top-search{
+	color: #646464;
+	font-size: 27px !important;
+	margin-left: 5%;
+	margin-top: 2%;
+}
+.right-area-inn-top-search-input{
+	width: 72%;
+	height: 82%;
+	margin-left: 3%;
+	border: none;
+	background: #DBD9D8;
+	font-size: 22px;
+	outline: none;
+
+}
+.right-area-inn-top-search-clean{
+	vertical-align:sub;
+	font-size: 27px !important;
+	color: #646464;
+	cursor: pointer;
+	display: none;
+}
+.right-area-list-out{
+	width: 19.8%;
+	height: 8.6%;
+	position: absolute;
+	z-index: 9999;
+	cursor: default;
+}
+.right-area-list-inn{
+	width: 100%;
+	height: 10%;
+	display: inline-block;
+}
+.right-area-list{
+	width: 100% ;
+	height: 90%;
+	overflow:auto;
+}
+.head-photo{
+	width: 19%;
+	height: 72%;
+	display: inline-block;
+	margin: 3%;
+	float: left;
+	border: #535353 1px solid;
+}
+.chat-info{
+	width: 62%;
+	height: 72%;
+	display: inline-block;
+	margin: 3%;
+	margin-left: -1%;
+	margin-right: 0;
+}
+.chat-info-name{
+	max-width: 57%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 21px;
+	display: inline-block;
+	cursor: default;
+	float: left;
+	padding-top: 2%;
+}
+.chat-info-info{
+	max-width: 65%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	float: left;
+	opacity:0.6;
+	cursor: default;
+	margin-top: 3%;
+}
+.chat-time-div{
+	width: 14%;
+	height: 38%;
+	display: inline-block;
+	float: right;
+	margin-top: 3%;
+	padding-right: 2%;
+	padding-top: 0.5%;
+	opacity:0.6;
+	font-size: 17px;
+	cursor: default;
+}
+.chat-info-time{
+	float: right;
+	display: inline-block;
+	cursor: default;
+	margin-top: -7%;
+}
+.right-area-friends{
+	width: 100%;
+	height: 90%;
+	overflow:auto;
+	display: none;
+}
+.center-operation-area{
+	width: 100%;
+	height: 100%;
+}
+.center-operation-area-top{
+	background: #F5F5F5;
+	width: 100%;
+	height: 10%;
+	border-bottom: 1px #E7E7E7 solid;
+}
+.center-operation-area-font{
+	font-size: 31px;
+	letter-spacing: 3px;
+	margin: -1px;
+	display: inline-block;
+	margin: 2%;
+	margin-left: 1%;
+	cursor: default;
+}
+.center-operation-area-operation{
+	display: inline-block;
+	float: right;
+	margin-right: 1.5%;
+	margin-top: 2.3%;
+	font-size: 32px !important;
+	cursor: pointer;
+}
+.center-operation-area-chat{
+	background: #F5F5F5;
+	width: 100%;
+	height: 72%;
+}
+.center-operation-area-input-div{
+	width: 100%;
+	height: 18%;
+	background: #FFFFFF;
+	border-top: #ECECEC;
+}
+.center-operation-area-input{
+	width: 96%;
+	height: 49%;
+	margin: 3%;
+	margin-left: 2%;
+	margin-bottom: 0;
+	outline: none;
+	resize: none;
+	border: none;
+	font-size: 17px;
+}
+.center-operation-area-send-btn{
+	width: 10%;
+	height: 22%;
+	float: right;
+	margin-right: 2%;
+	font-size: 23px;
+	padding-top: 0.2%;
+	letter-spacing: 13px;
+	padding-left: 3%;
+	border: 1px #E5E5E5 solid;
+	background: #F5F5F5;
+	color: #606060;
+	cursor: pointer;
+}
+.right-area-friends-inn{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px #DDDBDB solid;
+}
+.right-area-friends-inn-eng{
+	height: auto;
+	width: auto;
+	display: block;
+	font-size: 21px;
+	margin-left: 3%;
+	padding-top: 4%;
+}
+.right-area-friends-inn-inn{
+	width: 100%;
+	height: 63px;
+	padding-left: 2.3%;
+	display: inline-block;
+}
+.right-area-friends-inn-inn-photo{
+	border: 1px black solid;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-top: 3.4%;
+	float: left;
+	cursor: default;
+}
+.right-area-friends-inn-inn-name{
+	display: inline-block;
+	font-size: 16px;
+	width: auto;
+	height: auto;
+	float: left;
+	margin-top: 6.4%;
+	margin-left: 4.4%;
+	max-width: 78%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-weight: 600;
+	cursor: default;
+	width: 78%;
+}
+.mask {
+	position: absolute;
+	top: 0px;
+	z-index: 1002;
+	left: 0px;
+	display:none;
+	text-align: center;
+}
+.add_login_name_font{
+	font-size: 31px;
+	padding-left: 20px;
+	letter-spacing: 3px;
+	color: #ECECF8;
+	display: block;
+	vertical-align: middle;
+	margin-top: 12px;
+	cursor: default;
+}
+.add_login_name{
+	height: 414px;
+	width: 720px;
+	background: #6F729B;
+	z-index: 1100;
+	margin-top: 188px;
+	display: inline-block;
+	text-align: center;
+	cursor: default;
+}
+.add_login_name_input{
+	width: 500px;
+	height: 47px;
+	margin-top: 61px;
+	border: none;
+	border-bottom: 1px #ECECF8 solid;
+	background: #6F729B;
+	font-size: 26px;
+	color: #ECECF8;
+	outline:none;
+	text-align:center;
+}
+.add_login_name_font_hint{
+	font-size: 18px;
+	padding-left: 20px;
+	letter-spacing: 11px;
+	color: #ECECF8;
+	display: block;
+	vertical-align: middle;
+	margin-top: 45px;
+	opacity: 0.7;
+	cursor: default;
+}
+.add_login_name_btn{
+	width: 154px;
+	height: 48px;
+	border: 1px #ECECF8 solid;
+	border-radius: 11px;
+	display: inline-block;
+	letter-spacing: 8px;
+	font-size: 26px;
+	padding-top: 5px;
+	padding-left: 7px;
+	margin-top: 56px;
+	color: #ECECF8;
+	cursor: pointer;
+}
+
+
+/* 居中样式 */
+.center{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+
+	display: -o-box;
+	-o-box-orient: horizontal;
+	-o-box-pack: center;
+	-o-box-align: center;
+
+	display: -ms-box;
+	-ms-box-orient: horizontal;
+	-ms-box-pack: center;
+	-ms-box-align: center;
+
+	display: box;
+	box-orient: horizontal;
+	box-pack: center;
+	box-align: center;
+}
+/* 最近聊天 滚动条样式 */
+.right-area-list::-webkit-scrollbar,.right-area-friends::-webkit-scrollbar {/*滚动条整体样式*/
+	width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+	height: 1px;
+}
+.right-area-list::-webkit-scrollbar-thumb,.right-area-friends::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	background: #ADACAA;
+}
+.right-area-list::-webkit-scrollbar-track,.right-area-friends::-webkit-scrollbar-track {/*滚动条里面轨道*/
+	/* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+	border-radius: 10px;
+	background: #EDEDED;
+}
+/* 聊天区域 条样式 */
+.center-operation-area-chat::-webkit-scrollbar {/*滚动条整体样式*/
+	width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+	height: 1px;
+}
+.center-operation-area-chat::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	background: #DBDBDB;
+}
+.center-operation-area-chat::-webkit-scrollbar-track {/*滚动条里面轨道*/
+	/* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+	border-radius: 10px;
+	background: #EDEDED;
+}
+/* 输入框 条样式 */
+.center-operation-area-input::-webkit-scrollbar {/*滚动条整体样式*/
+	width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+	height: 1px;
+}
+.center-operation-area-input::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	background: #DBDBDB;
+}
+.center-operation-area-input::-webkit-scrollbar-track {/*滚动条里面轨道*/
+	/* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+	border-radius: 10px;
+	background: #EDEDED;
+}
+/* 对所有 input 设置 提示字体颜色 */
+input::-webkit-input-placeholder{
+	color: #000000;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+	color: #000000;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+	color: #000000;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+	color: #000000;
+}

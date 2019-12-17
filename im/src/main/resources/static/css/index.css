@@ -1,0 +1,788 @@
+body{
+	 overflow-x: hidden;
+	 overflow-y: auto;
+}
+.bg{
+	background: #6F729B;
+}
+.logo{
+	height: 100px;
+	padding-left: 46px;
+    padding-top: 20px;
+}
+.logo-font{
+	font-size: 31px;
+    padding-left: 20px;
+	letter-spacing: 3px;
+	color: #ECECF8;
+	cursor: default;
+}
+.icon{
+	padding: 0;
+	margin-top: 345px;
+}
+.line-parent{
+	margin-top: 10px;
+}
+.line{
+	background: #ECECF8;
+	height: 2px;
+	/* margin-top: 512px; */
+}
+.regis{
+	width: 100px;
+	height: 100px;
+	/* border: 1px #D9AAC8 solid; */
+	float: left;
+	margin-left: 20px !important;
+}
+.login{
+	width: 100px;
+	height: 100px;
+	/* border: 1px #D9AAC8 solid; */
+	float: right;
+	margin-right: 20px !important;
+}
+.triangle-parent{
+	text-align: center;
+}
+.triangle{
+	color: #FFFDFD;
+}
+.login-icon,.regis-icon{
+	font-size: 97px !important;
+	color: #ECECF8;
+	cursor:pointer;
+}
+.regis-area{
+	position: absolute;
+	z-index: 9999;
+	margin-top: -365px;
+	width: 24%;
+	height: 500px;
+	border: 1px #ECECF8 solid;
+	border-left: none;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	left: -467px;
+	display: none;
+}
+.login-area{
+	position: absolute;
+	z-index: 9999;
+	margin-top: -365px;
+	width: 24%;
+	height: 500px;
+	right: -466px;
+	border: 1px #ECECF8 solid;
+	border-right: none;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	display: none;
+}
+.login-logo-icon,.regis-regis-icon{
+	margin-left: 40px;
+    margin-top: 11px;
+	color: #ECECF8;
+}
+.login-logo-font,.regis-regis-font{
+	font-size: 31px;
+	padding-left: 20px;
+	letter-spacing: 3px;
+	color: #ECECF8;
+	display:inline-block;
+	vertical-align:middle;
+	margin-top: -25px;
+}
+.login-operation{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	border: #ECECF8 1px solid;
+	background: #ECECF8;
+	position: absolute;
+	left: -20px;
+    top: 43%;
+	cursor:pointer;
+}
+.regis-operation{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	border: #ECECF8 1px solid;
+	background: #ECECF8;
+	position: absolute;
+	right: -21px;
+	top: 43%;
+	cursor:pointer;
+}
+.login-operation-icon{
+	width: 0;
+    height: 0;
+    border: 20px solid red;
+    border-top-color: #6F729B;
+    border-bottom: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    margin-top: 9px;
+    margin-left: 3px;
+    transform: rotate(-91deg);
+    -ms-transform: rotate(-91deg);
+    -moz-transform: rotate(-91deg);
+    -webkit-transform: rotate(-91deg);
+    -o-transform: rotate(-91deg);
+	cursor:pointer;
+}
+.regis-operation-icon{
+	width: 0;
+	height: 0;
+	border: 20px solid red;
+	border-top-color: #6F729B;
+	border-bottom: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	margin-top: 9px;
+	margin-left: -3px;
+	transform: rotate(88deg);
+	-ms-transform: rotate(88deg);
+	-moz-transform: rotate(88deg);
+	-webkit-transform: rotate(88deg);
+	-o-transform: rotate(88deg);
+	cursor:pointer;
+}
+.login-user-input-div,.login-password-input-div,.regis-user-input-div,.regis-password-input-div,.regis-code-input-div{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px #ECECF8 solid;
+	margin-left: 27px;
+    margin-right: 33px;
+}
+.login-user-input,.login-password-input,.regis-user-input,.regis-password-input,.regis-code-input{
+	margin-top: 74px;
+    margin-left: 76px;
+    width: 325px;
+    height: 45px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-bottom-color: #D9AAC8;
+	background: #6F729B;
+	outline:none;
+	font-size: 25px;
+	color: #ECECE9;
+}
+.login-user-icon{
+	font-size: 53px;
+    position: absolute;
+    top: 114px;
+    left: 43px;
+	color: #ECECF8;
+}
+.regis-user-icon{
+	font-size: 40px;
+	position: absolute;
+	top: 91px;
+	left: 39px;
+	color: #ECECF8;
+}
+.regis-code-icon{
+	font-size: 45px;
+	position: absolute;
+	top: 171px;
+	left: 29px;
+	color: #ECECF8;
+}
+.login-password-icon{
+	font-size: 53px;
+	position: absolute;
+	top: 237px;
+    left: 39px;
+	color: #ECECF8;
+}
+.regis-password-icon{
+	font-size: 52px;
+	position: absolute;
+	top: 254px;
+	left: 37px;
+	color: #ECECF8;
+}
+.login-loginBtn-input-div,.regis-regisBtn-input-div{
+	margin-top: 67px;
+    margin-left: 73px;
+}
+.login-loginBtn-input,.regis-regisBtn-input{
+	width: 206px;
+    height: 50px;
+	border: 1px #ECECF8 solid;
+	border-radius: 8px;
+	padding-left: 60px;
+    font-size: 33px;
+	letter-spacing: 16px;
+	color: #ECECF8;
+	cursor: pointer;
+	display: inline-block;
+}
+.login-a{
+	color: #ECECF8 !important;
+	position: relative;
+    top: 9px;
+    left: 17px;
+	font-size: 18px;
+}
+.regis-user-input{
+	margin-top: 39px !important;
+}
+.regis-password-input{
+	margin-top: 39px !important;
+}
+.regis-code-input{
+	margin-top: 39px !important;
+	width: 152px !important;
+}
+.regis-code-btn{
+	width: 153px;
+	height: 41px;
+	border: #ECECE9 1px solid;
+	border-radius: 31px;
+	display: inline-block;
+	float: right;
+	margin-top: 40px;
+	font-family: "YouYuan";
+	font-size: 26px;
+	text-align: center;
+	line-height: 38px;
+	color: #AEAFCA;
+	cursor: pointer;
+}
+
+/* 对所有 input 设置 提示字体颜色 */
+input::-webkit-input-placeholder{
+	color: #ECECF8;
+	opacity: 0.5;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+	color: #ECECF8;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+	color: #ECECF8;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+	color: #ECECF8;
+}
+
+/* 下面是 涉及到 动画的css ※不要轻易动它※*/
+/* 注册 注册区域 显示 */
+.regis-regisArea-display{
+	animation:regis-regisArea-display 1s;
+	-moz-animation:regis-regisArea-display 1s; /* Firefox */
+	-webkit-animation:regis-regisArea-display 1s; /* Safari and Chrome */
+	-o-animation:regis-regisArea-display 1s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 注册 注册区域 隐藏 */
+.regis-regisArea-hidden{
+	animation:regis-regisArea-hidden 1s;
+	-moz-animation:regis-regisArea-hidden 1s; /* Firefox */
+	-webkit-animation:regis-regisArea-hidden 1s; /* Safari and Chrome */
+	-o-animation:regis-regisArea-hidden 1s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 登录 登录区域 显示 */
+.login-loginArea-display{
+	animation:login-loginArea-display 1s;
+	-moz-animation:login-loginArea-display 1s; /* Firefox */
+	-webkit-animation:login-loginArea-display 1s; /* Safari and Chrome */
+	-o-animation:login-loginArea-display 1s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 登录 登录区域 隐藏 */
+.login-loginArea-hidden{
+	animation:login-loginArea-hidden 1s;
+	-moz-animation:login-loginArea-hidden 1s; /* Firefox */
+	-webkit-animation:login-loginArea-hidden 1s; /* Safari and Chrome */
+	-o-animation:login-loginArea-hidden 1s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 注册 横线 改变 */
+.regis-tilt-change{
+	animation:regis-tilt-animation-change 0.75s;
+	-moz-animation:regis-tilt-animation-change 0.75s; /* Firefox */
+	-webkit-animation:regis-tilt-animation-change 0.75s; /* Safari and Chrome */
+	-o-animation:regis-tilt-animation-change 0.75s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 注册 横线 恢复 */
+.regis-tilt-restore{
+	animation:regis-tilt-animation-restore 0.75s;
+	-moz-animation:regis-tilt-animation-restore 0.75s; /* Firefox */
+	-webkit-animation:regis-tilt-animation-restore 0.75s; /* Safari and Chrome */
+	-o-animation:regis-tilt-animation-restore 0.75s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 登录 横线 改变 */
+.login-tilt-change{
+	animation:login-tilt-animation-change 0.75s;
+	-moz-animation:login-tilt-animation-change 0.75s; /* Firefox */
+	-webkit-animation:login-tilt-animation-change 0.75s; /* Safari and Chrome */
+	-o-animation:login-tilt-animation-change 0.75s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 登录 横线 恢复 */
+.login-tilt-restore{
+	animation:login-tilt-animation-restore 0.75s;
+	-moz-animation:login-tilt-animation-restore 0.75s; /* Firefox */
+	-webkit-animation:login-tilt-animation-restore 0.75s; /* Safari and Chrome */
+	-o-animation:login-tilt-animation-restore 0.75s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 注册 图标 改变 */
+.regis-icon-change{
+	animation:regis-icon-animation-change 0.75s;
+	-moz-animation:regis-icon-animation-change 0.75s; /* Firefox */
+	-webkit-animation:regis-icon-animation-change 0.75s; /* Safari and Chrome */
+	-o-animation:regis-icon-animation-change 0.75s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 注册 图标 恢复 */
+.regis-icon-restore{
+	animation:regis-icon-animation-restore 0.75s;
+	-moz-animation:regis-icon-animation-restore 0.75s; /* Firefox */
+	-webkit-animation:regis-icon-animation-restore 0.75s; /* Safari and Chrome */
+	-o-animation:regis-icon-animation-restore 0.75s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 登录 图标 改变 */
+.login-icon-change{
+	animation:login-icon-animation-change 0.75s;
+	-moz-animation:login-icon-animation-change 0.75s; /* Firefox */
+	-webkit-animation:login-icon-animation-change 0.75s; /* Safari and Chrome */
+	-o-animation:login-icon-animation-change 0.75s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 登录 图标 恢复 */
+.login-icon-restore{
+	animation:login-icon-animation-restore 0.75s;
+	-moz-animation:login-icon-animation-restore 0.75s; /* Firefox */
+	-webkit-animation:login-icon-animation-restore 0.75s; /* Safari and Chrome */
+	-o-animation:login-icon-animation-restore 0.75s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 注册 登录图标 改变 */
+.regis-login-icon-change{
+	animation:regis-login-icon-animation-change 0.75s;
+	-moz-animation:regis-login-icon-animation-change 0.75s; /* Firefox */
+	-webkit-animation:regis-login-icon-animation-change 0.75s; /* Safari and Chrome */
+	-o-animation:regis-login-icon-animation-change 0.75s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 注册 登录图标 恢复 */
+.regis-login-icon-restore{
+	animation:regis-login-icon-animation-restore 0.75s;
+	-moz-animation:regis-login-icon-animation-restore 0.75s; /* Firefox */
+	-webkit-animation:regis-login-icon-animation-restore 0.75s; /* Safari and Chrome */
+	-o-animation:regis-login-icon-animation-restore 0.75s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 登录 注册图标 改变 */
+.login-regis-icon-change{
+	animation:regis-login-icon-animation-change 0.75s;
+	-moz-animation:regis-login-icon-animation-change 0.75s; /* Firefox */
+	-webkit-animation:regis-login-icon-animation-change 0.75s; /* Safari and Chrome */
+	-o-animation:regis-login-icon-animation-change 0.75s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 登录 注册图标 恢复 */
+.login-regis-icon-restore{
+	animation:regis-login-icon-animation-restore 0.75s;
+	-moz-animation:regis-login-icon-animation-restore 0.75s; /* Firefox */
+	-webkit-animation:regis-login-icon-animation-restore 0.75s; /* Safari and Chrome */
+	-o-animation:regis-login-icon-animation-restore 0.75s; /* Opera */
+	animation-fill-mode: forwards;
+}
+/* 注册  横线 改变角度动画 */
+@keyframes regis-tilt-animation-change
+{
+0%   {transform:rotate(0deg);}
+100% {transform:rotate(-7deg);}
+}
+
+@-moz-keyframes regis-tilt-animation-change /* Firefox */
+{
+0%   {transform:rotate(0deg);}
+100% {transform:rotate(-7deg);}
+}
+
+@-webkit-keyframes regis-tilt-animation-change /* Safari 和 Chrome */
+{
+0%   {transform:rotate(0deg);}
+100% {transform:rotate(-7deg);}
+}
+
+@-o-keyframes regis-tilt-animation-change /* Opera */
+{
+0%   {transform:rotate(0deg);}
+100% {transform:rotate(-7deg);}
+}
+/* 注册 横线 恢复角度动画 */
+@keyframes regis-tilt-animation-restore
+{
+0%   {transform:rotate(-7deg);}
+100% {transform:rotate(0deg);}
+}
+
+@-moz-keyframes regis-tilt-animation-restore /* Firefox */
+{
+0%   {transform:rotate(-7deg);}
+100% {transform:rotate(0deg);}
+}
+
+@-webkit-keyframes regis-tilt-animation-restore /* Safari 和 Chrome */
+{
+0%   {transform:rotate(-7deg);}
+100% {transform:rotate(0deg);}
+}
+
+@-o-keyframes regis-tilt-animation-restore /* Opera */
+{
+0%   {transform:rotate(-7deg);}
+100% {transform:rotate(0deg);}
+}
+
+/* 登录  横线 改变角度动画 */
+@keyframes login-tilt-animation-change
+{
+0%   {transform:rotate(0deg);}
+100% {transform:rotate(7deg);}
+}
+
+@-moz-keyframes login-tilt-animation-change /* Firefox */
+{
+0%   {transform:rotate(0deg);}
+100% {transform:rotate(7deg);}
+}
+
+@-webkit-keyframes login-tilt-animation-change /* Safari 和 Chrome */
+{
+0%   {transform:rotate(0deg);}
+100% {transform:rotate(7deg);}
+}
+
+@-o-keyframes login-tilt-animation-change /* Opera */
+{
+0%   {transform:rotate(0deg);}
+100% {transform:rotate(7deg);}
+}
+/* 登录 横线 恢复角度动画 */
+@keyframes login-tilt-animation-restore
+{
+0%   {transform:rotate(7deg);}
+100% {transform:rotate(0deg);}
+}
+
+@-moz-keyframes login-tilt-animation-restore /* Firefox */
+{
+0%   {transform:rotate(7deg);}
+100% {transform:rotate(0deg);}
+}
+
+@-webkit-keyframes login-tilt-animation-restore /* Safari 和 Chrome */
+{
+0%   {transform:rotate(7deg);}
+100% {transform:rotate(0deg);}
+}
+
+@-o-keyframes login-tilt-animation-restore /* Opera */
+{
+0%   {transform:rotate(7deg);}
+100% {transform:rotate(0deg);}
+}
+/* 注册  图标 改变角度动画 */
+@keyframes regis-icon-animation-change
+{
+0%   {padding-top: 0px;}
+100% {padding-top: 45px;}
+}
+
+@-moz-keyframes regis-icon-animation-change /* Firefox */
+{
+0%   {padding-top: 0px;}
+100% {padding-top: 45px;}
+}
+
+@-webkit-keyframes regis-icon-animation-change /* Safari 和 Chrome */
+{
+0%   {padding-top: 0px;}
+100% {padding-top: 45px;}
+}
+
+@-o-keyframes regis-icon-animation-change /* Opera */
+{
+0%   {padding-top: 0px;}
+100% {padding-top: 45px;}
+}
+/* 注册 图标 恢复角度动画 */
+@keyframes regis-icon-animation-restore
+{
+0%   {padding-top: 45px;}
+100% {padding-top: 0px;}
+}
+
+@-moz-keyframes regis-icon-animation-restore /* Firefox */
+{
+0%   {padding-top: 45px;}
+100% {padding-top: 0px;}
+}
+
+@-webkit-keyframes regis-icon-animation-restore /* Safari 和 Chrome */
+{
+0%   {padding-top: 45px;}
+100% {padding-top: 0px;}
+}
+
+@-o-keyframes regis-icon-animation-restore /* Opera */
+{
+0%   {padding-top: 45px;}
+100% {padding-top: 0px;}
+}
+/* 登录  图标 改变角度动画 */
+@keyframes login-icon-animation-change
+{
+0%   {padding-top: 0px;}
+100% {padding-top: 45px;}
+}
+
+@-moz-keyframes login-icon-animation-change /* Firefox */
+{
+0%   {padding-top: 0px;}
+100% {padding-top: 45px;}
+}
+
+@-webkit-keyframes login-icon-animation-change /* Safari 和 Chrome */
+{
+0%   {padding-top: 0px;}
+100% {padding-top: 45px;}
+}
+
+@-o-keyframes login-icon-animation-change /* Opera */
+{
+0%   {padding-top: 0px;}
+100% {padding-top: 45px;}
+}
+/* 登录 图标 恢复角度动画 */
+@keyframes login-icon-animation-restore
+{
+0%   {padding-top: 45px;}
+100% {padding-top: 0px;}
+}
+
+@-moz-keyframes login-icon-animation-restore /* Firefox */
+{
+0%   {padding-top: 45px;}
+100% {padding-top: 0px;}
+}
+
+@-webkit-keyframes login-icon-animation-restore /* Safari 和 Chrome */
+{
+0%   {padding-top: 45px;}
+100% {padding-top: 0px;}
+}
+
+@-o-keyframes login-icon-animation-restore /* Opera */
+{
+0%   {padding-top: 45px;}
+100% {padding-top: 0px;}
+}
+/* 注册  登录图标 改变角度动画 */
+@keyframes regis-login-icon-animation-change
+{
+0%   {margin-top: 0px;}
+100% {margin-top: -45px;}
+}
+
+@-moz-keyframes regis-login-icon-animation-change /* Firefox */
+{
+0%   {margin-top: 0px;}
+100% {margin-top: -45px;}
+}
+
+@-webkit-keyframes regis-login-icon-animation-change /* Safari 和 Chrome */
+{
+0%   {margin-top: 0px;}
+100% {margin-top: -45px;}
+}
+
+@-o-keyframes regis-login-icon-animation-change /* Opera */
+{
+0%   {margin-top: 0px;}
+100% {margin-top: -45px;}
+}
+/* 注册 登录图标 恢复角度动画 */
+@keyframes regis-login-icon-animation-restore
+{
+0%   {margin-top: -45px;}
+100% {margin-top: 0px;}
+}
+
+@-moz-keyframes regis-login-icon-animation-restore /* Firefox */
+{
+0%   {margin-top: -45px;}
+100% {margin-top: 0px;}
+}
+
+@-webkit-keyframes regis-login-icon-animation-restore /* Safari 和 Chrome */
+{
+0%   {margin-top: -45px;}
+100% {margin-top: 0px;}
+}
+
+@-o-keyframes regis-login-icon-animation-restore /* Opera */
+{
+0%   {margin-top: -45px;}
+100% {margin-top: 0px;}
+}
+/* 登录  注册图标 改变角度动画 */
+@keyframes login-regis-icon-animation-change
+{
+0%   {margin-top: 0px;}
+100% {margin-top: -45px;}
+}
+
+@-moz-keyframes login-regis-icon-animation-change /* Firefox */
+{
+0%   {margin-top: 0px;}
+100% {margin-top: -45px;}
+}
+
+@-webkit-keyframes login-regis-icon-animation-change /* Safari 和 Chrome */
+{
+0%   {margin-top: 0px;}
+100% {margin-top: -45px;}
+}
+
+@-o-keyframes login-regis-icon-animation-change /* Opera */
+{
+0%   {margin-top: 0px;}
+100% {margin-top: -45px;}
+}
+/* 登录 注册图标 恢复角度动画 */
+@keyframes login-regis-icon-animation-restore
+{
+0%   {margin-top: -45px;}
+100% {margin-top: 0px;}
+}
+
+@-moz-keyframes login-regis-icon-animation-restore /* Firefox */
+{
+0%   {margin-top: -45px;}
+100% {margin-top: 0px;}
+}
+
+@-webkit-keyframes login-regis-icon-animation-restore /* Safari 和 Chrome */
+{
+0%   {margin-top: -45px;}
+100% {margin-top: 0px;}
+}
+
+@-o-keyframes login-regis-icon-animation-restore /* Opera */
+{
+0%   {margin-top: -45px;}
+100% {margin-top: 0px;}
+}
+/* 登录  登录区域 显示登录区域动画 */
+@keyframes login-loginArea-display
+{
+0%   {right: -466px;}
+100% {right: 16px;}
+}
+
+@-moz-keyframes login-loginArea-display /* Firefox */
+{
+0%   {right: -466px;}
+100% {right: 16px;}
+}
+
+@-webkit-keyframes login-loginArea-display /* Safari 和 Chrome */
+{
+0%   {right: -466px;}
+100% {right: 16px;}
+}
+
+@-o-keyframes login-loginArea-display /* Opera */
+{
+0%   {right: -466px;}
+100% {right: 16px;}
+}
+/* 登录 登录区域 隐藏登录区域动画 */
+@keyframes login-loginArea-hidden
+{
+0%   {right: 16px;}
+100% {right: -466px;}
+}
+
+@-moz-keyframes login-loginArea-hidden /* Firefox */
+{
+0%   {right: 16px;}
+100% {right: -466px;}
+}
+
+@-webkit-keyframes login-loginArea-hidden /* Safari 和 Chrome */
+{
+0%   {right: 16px;}
+100% {right: -466px;}
+}
+
+@-o-keyframes login-loginArea-hidden /* Opera */
+{
+0%   {right: 16px;}
+100% {right: -466px;}
+}
+/* 注册 注册区域 显示注册区域 动画 */
+@keyframes regis-regisArea-display
+{
+0%   {left: -467px;}
+100% {left: 16px;}
+}
+
+@-moz-keyframes regis-regisArea-display /* Firefox */
+{
+0%   {left: -467px;}
+100% {left: 16px;}
+}
+
+@-webkit-keyframes regis-regisArea-display /* Safari 和 Chrome */
+{
+0%   {left: -467px;}
+100% {left: 16px;}
+}
+
+@-o-keyframes regis-regisArea-display/* Opera */
+{
+0%   {left: -467px;}
+100% {left: 16px;}
+}
+/* 注册 注册区域 隐藏注册区域动画 */
+@keyframes regis-regisArea-hidden
+{
+0%   {left: 16px;}
+100% {left: -467px;}
+}
+
+@-moz-keyframes regis-regisArea-hidden /* Firefox */
+{
+0%   {left: 16px;}
+100% {left: -467px;}
+}
+
+@-webkit-keyframes regis-regisArea-hidden /* Safari 和 Chrome */
+{
+0%   {left: 16px;}
+100% {left: -467px;}
+}
+
+@-o-keyframes regis-regisArea-hidden /* Opera */
+{
+0%   {left: 16px;}
+100% {left: -467px;}
+}
